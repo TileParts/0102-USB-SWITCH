@@ -1,0 +1,312 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 6305BC90
+P 2400 2700
+F 0 "J1" H 2507 3567 50  0000 C CNN
+F 1 "UPSTREAM" H 2507 3476 50  0000 C CNN
+F 2 "JLC-SMT:KINGHELM_KH-TYPE-C-L10-14P" H 2550 2700 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2550 2700 50  0001 C CNN
+F 4 "kinghelm" H 2400 2700 50  0001 C CNN "Manufacturer"
+F 5 "C2761226" H 2400 2700 50  0001 C CNN "PartNumber"
+F 6 "JLC-EXT" H 2400 2700 50  0001 C CNN "Supplier"
+	1    2400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J2
+U 1 1 6305DF64
+P 6900 2700
+F 0 "J2" H 7007 3567 50  0000 C CNN
+F 1 "DOWNSTREAM" H 7007 3476 50  0000 C CNN
+F 2 "JLC-SMT:HRO_TYPE-C-31-M-12" H 7050 2700 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 7050 2700 50  0001 C CNN
+F 4 "HRO" H 6900 2700 50  0001 C CNN "Manufacturer"
+F 5 "C165948" H 6900 2700 50  0001 C CNN "PartNumber"
+F 6 "JLC-EXT" H 6900 2700 50  0001 C CNN "Supplier"
+	1    6900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 1 1 630644EB
+P 4200 2100
+F 0 "SW1" H 4200 2385 50  0000 C CNN
+F 1 "EN" H 4200 2294 50  0000 C CNN
+F 2 "JLC-SMT:SW_Push_DPDT_8.5x8.5mm" H 4200 2100 50  0001 C CNN
+F 3 "~" H 4200 2100 50  0001 C CNN
+F 4 "YIYUAN" H 4200 2100 50  0001 C CNN "Manufacturer"
+F 5 "C2911143" H 4200 2100 50  0001 C CNN "PartNumber"
+F 6 "JLC-EXT" H 4200 2100 50  0001 C CNN "Supplier"
+	1    4200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 2 1 63064EEE
+P 4200 2500
+F 0 "SW1" H 4200 2267 50  0000 C CNN
+F 1 "EN" H 4200 2176 50  0000 C CNN
+F 2 "JLC-SMT:SW_Push_DPDT_8.5x8.5mm" H 4200 2500 50  0001 C CNN
+F 3 "~" H 4200 2500 50  0001 C CNN
+F 4 "YIYUAN" H 4200 2500 50  0001 C CNN "Manufacturer"
+F 5 "C2911143" H 4200 2500 50  0001 C CNN "PartNumber"
+F 6 "JLC-EXT" H 4200 2500 50  0001 C CNN "Supplier"
+	2    4200 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4000 2500
+NoConn ~ 4400 2600
+NoConn ~ 4400 2400
+NoConn ~ 4400 2000
+Wire Wire Line
+	3000 2100 4000 2100
+Text Label 3200 2700 2    50   ~ 0
+D-
+Wire Wire Line
+	3200 2700 3000 2700
+Wire Wire Line
+	3000 2600 3000 2700
+Connection ~ 3000 2700
+Text Label 3200 2800 2    50   ~ 0
+D+
+Wire Wire Line
+	3200 2800 3000 2800
+Wire Wire Line
+	3000 2900 3000 2800
+Connection ~ 3000 2800
+NoConn ~ 3000 3300
+NoConn ~ 3000 3200
+NoConn ~ 2100 3600
+$Comp
+L power:GND #PWR01
+U 1 1 6306A744
+P 2400 3600
+F 0 "#PWR01" H 2400 3350 50  0001 C CNN
+F 1 "GND" H 2405 3427 50  0001 C CNN
+F 2 "" H 2400 3600 50  0001 C CNN
+F 3 "" H 2400 3600 50  0001 C CNN
+	1    2400 3600
+	1    0    0    -1  
+$EndComp
+Text Label 5400 2200 2    50   ~ 0
+VOUT
+Text Label 7700 2100 2    50   ~ 0
+VOUT
+Wire Wire Line
+	7700 2100 7500 2100
+Text Label 7700 2700 2    50   ~ 0
+D-
+Wire Wire Line
+	7700 2700 7500 2700
+Text Label 7700 2800 2    50   ~ 0
+D+
+Wire Wire Line
+	7700 2800 7500 2800
+Wire Wire Line
+	7500 2600 7500 2700
+Connection ~ 7500 2700
+Wire Wire Line
+	7500 2800 7500 2900
+Connection ~ 7500 2800
+$Comp
+L power:GND #PWR02
+U 1 1 6306D98F
+P 6900 3600
+F 0 "#PWR02" H 6900 3350 50  0001 C CNN
+F 1 "GND" H 6905 3427 50  0001 C CNN
+F 2 "" H 6900 3600 50  0001 C CNN
+F 3 "" H 6900 3600 50  0001 C CNN
+	1    6900 3600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6600 3600
+NoConn ~ 7500 3200
+NoConn ~ 7500 3300
+$Comp
+L Device:R_US R1
+U 1 1 6306F344
+P 4900 2350
+F 0 "R1" H 4833 2396 50  0000 R CNN
+F 1 "22.1K" H 4833 2305 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4940 2340 50  0001 C CNN
+F 3 "~" H 4900 2350 50  0001 C CNN
+F 4 "UniOhm" H 4900 2350 50  0001 C CNN "Manufacturer"
+F 5 "C43473" H 4900 2350 50  0001 C CNN "PartNumber"
+F 6 "JLC-EXT" H 4900 2350 50  0001 C CNN "Supplier"
+	1    4900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 63071094
+P 4900 2650
+F 0 "R2" H 4833 2696 50  0000 R CNN
+F 1 "47.5K" H 4833 2605 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4940 2640 50  0001 C CNN
+F 3 "~" H 4900 2650 50  0001 C CNN
+F 4 "UniOhm" H 4900 2650 50  0001 C CNN "Manufacturer"
+F 5 "C25896" H 4900 2650 50  0001 C CNN "PartNumber"
+F 6 "JLC-EXT" H 4900 2650 50  0001 C CNN "Supplier"
+	1    4900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 63071551
+P 4900 2800
+F 0 "#PWR04" H 4900 2550 50  0001 C CNN
+F 1 "GND" H 4905 2627 50  0001 C CNN
+F 2 "" H 4900 2800 50  0001 C CNN
+F 3 "" H 4900 2800 50  0001 C CNN
+	1    4900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2200 4900 2200
+$Comp
+L Device:LED D1
+U 1 1 63072038
+P 5150 2500
+F 0 "D1" H 5143 2625 50  0000 C CNN
+F 1 "POWER" H 5143 2716 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5150 2500 50  0001 C CNN
+F 3 "~" H 5150 2500 50  0001 C CNN
+F 4 "KENTO" H 5150 2500 50  0001 C CNN "Manufacturer"
+F 5 "C2286" H 5150 2500 50  0001 C CNN "PartNumber"
+F 6 "JLC" H 5150 2500 50  0001 C CNN "Supplier"
+	1    5150 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 2500 4900 2500
+Connection ~ 4900 2500
+$Comp
+L power:GND #PWR03
+U 1 1 63073E7A
+P 5400 2600
+F 0 "#PWR03" H 5400 2350 50  0001 C CNN
+F 1 "GND" H 5405 2427 50  0001 C CNN
+F 2 "" H 5400 2600 50  0001 C CNN
+F 3 "" H 5400 2600 50  0001 C CNN
+	1    5400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2600 5400 2500
+Wire Wire Line
+	5400 2500 5300 2500
+Wire Wire Line
+	4900 2200 5400 2200
+Connection ~ 4900 2200
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 63082217
+P 4500 4500
+F 0 "H1" H 4600 4546 50  0000 L CNN
+F 1 "MountingHole" H 4600 4455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 4500 4500 50  0001 C CNN
+F 3 "~" H 4500 4500 50  0001 C CNN
+F 4 "~" H 4500 4500 50  0001 C CNN "Manufacturer"
+F 5 "~" H 4500 4500 50  0001 C CNN "PartNumber"
+F 6 "~" H 4500 4500 50  0001 C CNN "Supplier"
+	1    4500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 630827A3
+P 4500 5000
+F 0 "H2" H 4600 5046 50  0000 L CNN
+F 1 "MountingHole" H 4600 4955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 4500 5000 50  0001 C CNN
+F 3 "~" H 4500 5000 50  0001 C CNN
+F 4 "~" H 4500 5000 50  0001 C CNN "Manufacturer"
+F 5 "~" H 4500 5000 50  0001 C CNN "PartNumber"
+F 6 "~" H 4500 5000 50  0001 C CNN "Supplier"
+	1    4500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 63089FE0
+P 4500 5500
+F 0 "H3" H 4600 5546 50  0000 L CNN
+F 1 "MountingHole" H 4600 5455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 4500 5500 50  0001 C CNN
+F 3 "~" H 4500 5500 50  0001 C CNN
+F 4 "~" H 4500 5500 50  0001 C CNN "Manufacturer"
+F 5 "~" H 4500 5500 50  0001 C CNN "PartNumber"
+F 6 "~" H 4500 5500 50  0001 C CNN "Supplier"
+	1    4500 5500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7500 2300
+NoConn ~ 7500 2400
+$Comp
+L Device:R_US R4
+U 1 1 63096C7D
+P 3350 2400
+F 0 "R4" V 3463 2400 50  0000 C CNN
+F 1 "5.1K" V 3554 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3390 2390 50  0001 C CNN
+F 3 "~" H 3350 2400 50  0001 C CNN
+F 4 "UniOhm" H 3350 2400 50  0001 C CNN "Manufacturer"
+F 5 "C25905" H 3350 2400 50  0001 C CNN "PartNumber"
+F 6 "JLC" H 3350 2400 50  0001 C CNN "Supplier"
+	1    3350 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 630985D2
+P 3350 2300
+F 0 "R3" V 3100 2300 50  0000 C CNN
+F 1 "5.1K" V 3200 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3390 2290 50  0001 C CNN
+F 3 "~" H 3350 2300 50  0001 C CNN
+F 4 "UniOhm" H 3350 2300 50  0001 C CNN "Manufacturer"
+F 5 "C25905" H 3350 2300 50  0001 C CNN "PartNumber"
+F 6 "JLC" H 3350 2300 50  0001 C CNN "Supplier"
+	1    3350 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 63099C6F
+P 3600 2400
+F 0 "#PWR05" H 3600 2150 50  0001 C CNN
+F 1 "GND" H 3605 2227 50  0001 C CNN
+F 2 "" H 3600 2400 50  0001 C CNN
+F 3 "" H 3600 2400 50  0001 C CNN
+	1    3600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2400 3000 2400
+Wire Wire Line
+	3000 2300 3200 2300
+Wire Wire Line
+	3600 2400 3500 2400
+Wire Wire Line
+	3500 2300 3600 2300
+Wire Wire Line
+	3600 2300 3600 2400
+Connection ~ 3600 2400
+Text Label 3200 2100 2    50   ~ 0
+VIN
+$EndSCHEMATC
