@@ -28,20 +28,6 @@ F 6 "JLC-EXT" H 2400 2700 50  0001 C CNN "Supplier"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J2
-U 1 1 6305DF64
-P 6900 2700
-F 0 "J2" H 7007 3567 50  0000 C CNN
-F 1 "DOWNSTREAM" H 7007 3476 50  0000 C CNN
-F 2 "JLC-SMT:HRO_TYPE-C-31-M-12" H 7050 2700 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 7050 2700 50  0001 C CNN
-F 4 "HRO" H 6900 2700 50  0001 C CNN "Manufacturer"
-F 5 "C165948" H 6900 2700 50  0001 C CNN "PartNumber"
-F 6 "JLC-EXT" H 6900 2700 50  0001 C CNN "Supplier"
-	1    6900 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_DPDT_x2 SW1
 U 1 1 630644EB
 P 4200 2100
@@ -109,34 +95,25 @@ Text Label 7700 2100 2    50   ~ 0
 VOUT
 Wire Wire Line
 	7700 2100 7500 2100
-Text Label 7700 2700 2    50   ~ 0
+Text Label 7700 2300 2    50   ~ 0
 D-
 Wire Wire Line
-	7700 2700 7500 2700
-Text Label 7700 2800 2    50   ~ 0
+	7700 2300 7500 2300
+Text Label 7700 2400 2    50   ~ 0
 D+
 Wire Wire Line
-	7700 2800 7500 2800
-Wire Wire Line
-	7500 2600 7500 2700
-Connection ~ 7500 2700
-Wire Wire Line
-	7500 2800 7500 2900
-Connection ~ 7500 2800
+	7700 2400 7500 2400
 $Comp
 L power:GND #PWR02
 U 1 1 6306D98F
-P 6900 3600
-F 0 "#PWR02" H 6900 3350 50  0001 C CNN
-F 1 "GND" H 6905 3427 50  0001 C CNN
-F 2 "" H 6900 3600 50  0001 C CNN
-F 3 "" H 6900 3600 50  0001 C CNN
-	1    6900 3600
+P 7200 2700
+F 0 "#PWR02" H 7200 2450 50  0001 C CNN
+F 1 "GND" H 7205 2527 50  0001 C CNN
+F 2 "" H 7200 2700 50  0001 C CNN
+F 3 "" H 7200 2700 50  0001 C CNN
+	1    7200 2700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6600 3600
-NoConn ~ 7500 3200
-NoConn ~ 7500 3300
 $Comp
 L Device:R_US R1
 U 1 1 6306F344
@@ -255,8 +232,6 @@ F 6 "~" H 4500 5500 50  0001 C CNN "Supplier"
 	1    4500 5500
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7500 2300
-NoConn ~ 7500 2400
 $Comp
 L Device:R_US R4
 U 1 1 63096C7D
@@ -309,4 +284,19 @@ Wire Wire Line
 Connection ~ 3600 2400
 Text Label 3200 2100 2    50   ~ 0
 VIN
+$Comp
+L Connector:USB_A J2
+U 1 1 630BB6FC
+P 7200 2300
+F 0 "J2" H 7257 2767 50  0000 C CNN
+F 1 "DOWNSTREAM" H 7257 2676 50  0000 C CNN
+F 2 "JLC-SMT:CKMTW_USBAS04P" H 7350 2250 50  0001 C CNN
+F 3 " ~" H 7350 2250 50  0001 C CNN
+F 4 "Ckmtw" H 7200 2300 50  0001 C CNN "Manufacturer"
+F 5 "C386737" H 7200 2300 50  0001 C CNN "PartNumber"
+F 6 "JLC-EXT" H 7200 2300 50  0001 C CNN "Supplier"
+	1    7200 2300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7100 2700
 $EndSCHEMATC
