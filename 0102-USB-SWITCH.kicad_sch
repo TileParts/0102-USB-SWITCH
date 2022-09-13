@@ -1205,7 +1205,7 @@
     (uuid 00000000-0000-0000-0000-0000630bb6fc)
     (property "Reference" "J2" (id 0) (at 184.3278 46.5582 0))
     (property "Value" "DOWNSTREAM" (id 1) (at 184.3278 48.8696 0))
-    (property "Footprint" "JLC-SMT:CKMTW_USBAS04P" (id 2) (at 186.69 59.69 0)
+    (property "Footprint" "JLC-SMT:MOLEX_48258-0001" (id 2) (at 186.69 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (id 3) (at 186.69 59.69 0)
@@ -1263,7 +1263,7 @@
       (reference "J1") (unit 1) (value "UPSTREAM") (footprint "JLC-SMT:KINGHELM_KH-TYPE-C-L10-14P")
     )
     (path "/00000000-0000-0000-0000-0000630bb6fc"
-      (reference "J2") (unit 1) (value "DOWNSTREAM") (footprint "JLC-SMT:CKMTW_USBAS04P")
+      (reference "J2") (unit 1) (value "DOWNSTREAM") (footprint "JLC-SMT:MOLEX_48258-0001")
     )
     (path "/00000000-0000-0000-0000-00006306f344"
       (reference "R1") (unit 1) (value "2K") (footprint "Resistor_SMD:R_0402_1005Metric")
