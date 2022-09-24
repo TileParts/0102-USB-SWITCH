@@ -800,7 +800,7 @@
     (property "Manufacturer" "HRO" (id 4) (at 60.96 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "PartNumber" "" (id 5) (at 60.96 68.58 0)
+    (property "PartNumber" "C165948" (id 5) (at 60.96 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Supplier" "JLC-EXT" (id 6) (at 60.96 68.58 0)
